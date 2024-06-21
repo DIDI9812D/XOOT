@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>איקס עיגול מולטיפלייר</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu" class="container">
+        <h1>ברוכים הבאים למשחק איקס עיגול!</h1>
+        <button id="play-computer" class="btn">שחק נגד המחשב</button>
+        <button id="play-friends" class="btn">שחק עם חברים</button>
+    </div>
+
+    <div id="multiplayer-menu" class="container hidden">
+        <input type="text" id="server-name" placeholder="שם השרת" class="input">
+        <button id="create-server" class="btn">צור שרת</button>
+        <h2>רשימת שרתים:</h2>
+        <ul id="server-list" class="server-list"></ul>
+    </div>
+
+    <div id="game-board" class="container hidden">
+        <h2 id="status"></h2>
+        <div id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
